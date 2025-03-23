@@ -3,7 +3,7 @@
 ## Design code of single-gate multi-level beam switching [metasurface](https://en.wikipedia.org/wiki/Electromagnetic_metasurface) utilizing [Adjoint method](https://en.wikipedia.org/wiki/Adjoint_state_method)
 
 
-This document provides a design code for single-gate multi-level beam switching based on a metasurface, employing the adjoint method for optimization. This code is associated with the research paper [High-directivity multi-level beam switching with single-gate tunable metasurfaces based on graphene] (https://arxiv.org/abs/2410.00806)
+This document provides a design code for single-gate multi-level beam switching based on a metasurface, employing the adjoint method for optimization. This code is associated with the research paper [High-directivity multi-level beam switching with single-gate tunable metasurfaces based on graphene](https://arxiv.org/abs/2410.00806)
 
 
 ## Figure of merit
@@ -12,11 +12,11 @@ The design aims to maximize both directivity and target diffraction efficiency a
 
 
 ## Algorithm
-The core of the design utilizes the adjoint method, an efficient gradient calculation technique. The adjoint method offers a significant advantage over [finite-difference] (https://en.wikipedia.org/wiki/Finite_difference) approaches by providing gradient values on design variables irrespective of their quantity, thereby accelerating the optimization process. Detailed information regarding the application of the adjoint method in nanophotonic systems can be found in our [review paper] (https://www.degruyter.com/document/doi/10.1515/nanoph-2021-0713/html?lang=en&srsltid=AfmBOoopnvQKaBim4U1x62GNLuUmxDV_sV_W0sMarN0pgrkE5Q17UaBR).
+The core of the design utilizes the adjoint method, an efficient gradient calculation technique. The adjoint method offers a significant advantage over [finite-difference](https://en.wikipedia.org/wiki/Finite_difference) approaches by providing gradient values on design variables irrespective of their quantity, thereby accelerating the optimization process. Detailed information regarding the application of the adjoint method in nanophotonic systems can be found in our [review paper](https://www.degruyter.com/document/doi/10.1515/nanoph-2021-0713/html?lang=en&srsltid=AfmBOoopnvQKaBim4U1x62GNLuUmxDV_sV_W0sMarN0pgrkE5Q17UaBR).
 
 
 ## Simulation software
-This work employs the open-source MATLAB-based Rigorous Coupled-Wave Analysis [RCWA](https://en.wikipedia.org/wiki/Rigorous_coupled-wave_analysis) software, [RETICOLO] (https://zenodo.org/record/3610175#.YBkECS2UGX0).
+This work employs the open-source MATLAB-based Rigorous Coupled-Wave Analysis [RCWA](https://en.wikipedia.org/wiki/Rigorous_coupled-wave_analysis) software, [RETICOLO] (https://zenodo.org/record/3610175#.YBkECS2UGX0). In this repository we already included RETICOLO V9 version for convenience.
 
 
 ## Installation and running the optimization
