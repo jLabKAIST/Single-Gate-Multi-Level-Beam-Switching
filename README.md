@@ -3,7 +3,7 @@
 ## Design code of single-gate multi-level beam switching [metasurface](https://en.wikipedia.org/wiki/Electromagnetic_metasurface) utilizing [Adjoint method](https://en.wikipedia.org/wiki/Adjoint_state_method)
 
 
-This document provides a design code for single-gate multi-level beam switching based on a metasurface, employing the adjoint method for optimization. This code is associated with the research paper [High-directivity multi-level beam switching with single-gate tunable metasurfaces based on graphene](https://arxiv.org/abs/2410.00806)
+This document provides a design code for single-gate multi-level beam switching based on a metasurface, employing the adjoint method for optimization. This code is associated with the research paper [High-directivity multi-level beam switching with single-gate tunable metasurfaces based on graphene](https://arxiv.org/abs/2410.00806).
 
 
 ## Figure of merit
@@ -16,7 +16,7 @@ The core of the design utilizes the adjoint method, an efficient gradient calcul
 
 
 ## Simulation software
-This work employs the open-source MATLAB-based Rigorous Coupled-Wave Analysis [RCWA](https://en.wikipedia.org/wiki/Rigorous_coupled-wave_analysis) software, [RETICOLO] (https://zenodo.org/record/3610175#.YBkECS2UGX0). In this repository we already included RETICOLO V9 version for convenience.
+This work employs the open-source MATLAB-based Rigorous Coupled-Wave Analysis [RCWA](https://en.wikipedia.org/wiki/Rigorous_coupled-wave_analysis) software, [RETICOLO](https://zenodo.org/record/3610175#.YBkECS2UGX0). In this repository we already included RETICOLO V9 version for convenience.
 
 
 ## Installation and running the optimization
@@ -47,5 +47,5 @@ OptParm.b_coefficient = 0.3; % trade-off coefficient
 ```
 
 
-## citation
+## Citation
 If you utilize this code, please cite our paper: https://arxiv.org/abs/2410.00806. The citation will be updated upon journal acceptance.
