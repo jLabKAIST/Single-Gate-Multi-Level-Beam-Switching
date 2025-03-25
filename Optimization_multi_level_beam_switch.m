@@ -23,8 +23,8 @@ heights = 1.5*pi;
 thicknesses = 1.5*pi;
 repeats = 1:30;
 OptParm.aspect_ratio = 10; % maximum aspect ratio
-OptParm.spacer_thickness = 30e-9; % SiN spacer thickness
-OptParm.t_HfO2 = 50e-9; % HfO2 thickness
+OptParm.spacer_thickness = 30e-9; % HfO2 spacer thickness
+OptParm.t_HfO2 = 50e-9; % HfO2 etch-stop layer thickness
 OptParm.b_coefficient = 0.3; % trade-off coefficient
 %%
 
