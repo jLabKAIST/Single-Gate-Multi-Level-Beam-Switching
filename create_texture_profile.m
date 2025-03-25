@@ -2,7 +2,6 @@ function OptParm = create_texture_profile(OptParm)
 
 OptParm.n_sub = OptParm.n_Si;
 OptParm.n_grating = OptParm.n_Si;
-OptParm.n_spacer = OptParm.n_SiN;
 OptParm.n_BR = OptParm.n_Au;
 
 

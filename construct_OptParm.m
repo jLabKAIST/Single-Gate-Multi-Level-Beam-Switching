@@ -44,14 +44,6 @@ OptParm.n_Ag = interp1(wvls, Ag_nk, OptParm.sim_wavelength);
 OptParm.n_Si = 3.42;
 OptParm.n_air = 1;
 
-re_eps = load('Material_Index\[Si3N4_LPCVD2] re_eps.txt');
-im_eps = load('Material_Index\[Si3N4_LPCVD2] im_eps.txt');
-SiN_nk = sqrt(re_eps(:,2)+1j*im_eps(:,2));
-freqs = re_eps(:,1)*1e12;
-wvls = c./freqs;
-OptParm.n_SiN = interp1(wvls, SiN_nk, OptParm.sim_wavelength);
-OptParm.n_SiN_at_target_wvl = interp1(wvls, SiN_nk, OptParm.wavelength);
-% disp(OptParm.n_SiN);
 OptParm.n_HfO2 = 1.81; % n_HfO2 @ 8 um
 % OptParm.n_HfO2 = 1.876; % n_HfO2 @ 7 um
 % OptParm.n_HfO2 = 1.8446; % n_HfO2 @ 7.5 um
@@ -64,7 +56,7 @@ OptParm.n_HfO2 = 1.81; % n_HfO2 @ 8 um
 % plot(wvls, real(SiN_nk));
 % plot(wvls, imag(SiN_nk));
 
-wholeepsilons = load('Material_Index\wholeepsilons.txt');
+wholeepsilons = load('Material_Index\graphene_epsilons.txt');
 for i = 1:length(OptParm.EFs)
 OptParm.n_grs(i) = sqrt(griddata(wholeepsilons(:,1), wholeepsilons(:,2), wholeepsilons(:,3)+1j*wholeepsilons(:,4), c/OptParm.sim_wavelength,OptParm.EFs(i)));
 end
