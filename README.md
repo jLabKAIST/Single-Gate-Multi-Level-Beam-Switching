@@ -33,17 +33,27 @@ folderindex = 8000; % save folder index
 OptParm.wavelength = 8.0e-6; % wavelength used in geometrical parameter calculation
 OptParm.sim_wavelength = 8.0e-6; % wavelength of input wave (useful for broadband spectrum analysis)
 OptParm.N = 20; % # of design variables
+% For two-level beam switching, set OptParm.EFs = [0.2, 0.6]
+% For three-level beam switching, set OptParm.EFs = [0.2, 0.6, 1.0]
+% For four-level beam switching, set OptParm.EFs = [0.05, 0.35, 0.65, 0.95]
 OptParm.EFs = [0.2, 0.6, 1.0]; % Target Fermi levels
+% For two- and three-level beam switching, 
+% set OptParm.diffraction_channels = [1 0 -1];
+% For four-level beam switching, 
+% set OptParm.diffraction_channels = [2 1 0 -1 -2];
 OptParm.diffraction_channels = [1 0 -1]; % Propagating diffraction channels
 OptParm.gradient_type = 'shape-derivative'; % Either 'grayscale' or 'shape-derivative'
 OptParm.angle = 80; % Target diffraction angle
+% heights = linspace(1.5*pi,3.5*pi,9); % height sweep
 heights = 1.5*pi; 
+% thicknesses = linspace(1.5*pi,3.5*pi,9); % thickness sweep
 thicknesses = 1.5*pi;
 repeats = 1:30;
 OptParm.aspect_ratio = 10; % maximum aspect ratio
-OptParm.spacer_thickness = 30e-9; % SiN spacer thickness
-OptParm.t_HfO2 = 50e-9; % HfO2 thickness
+OptParm.spacer_thickness = 30e-9; % HfO2 spacer thickness
+OptParm.t_HfO2 = 50e-9; % HfO2 etch-stop layer thickness
 OptParm.b_coefficient = 0.3; % trade-off coefficient
+%%
 ```
 
 ## Optimized structures
