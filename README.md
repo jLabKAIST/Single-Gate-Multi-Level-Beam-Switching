@@ -46,6 +46,8 @@ OptParm.t_HfO2 = 50e-9; % HfO2 thickness
 OptParm.b_coefficient = 0.3; % trade-off coefficient
 ```
 
+## Optimized structures
+In 'Optimized_Structure' folder, we have included optimized solutions for two-, three-level metasurfaces at 7.0 7.5, 8.0 (main result), 8.5, and 9.0 ums. For the four-level, optimization result for 8.0 um is included.
 
 ## Citation
 If you utilize this code, please cite our paper: https://arxiv.org/abs/2410.00806. The citation will be updated upon journal acceptance.
