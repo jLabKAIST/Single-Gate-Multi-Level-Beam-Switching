@@ -23,7 +23,7 @@ This work employs the open-source MATLAB-based Rigorous Coupled-Wave Analysis [R
 1. Clone the repository using the following command:
 To install, clone this repository in your desired folder:
 ```
-git clone --https://github.com/jhpark94/Single_Gate_Multi_Level_Beam_Switching.git
+git clone --https://github.com/jLabKAIST/Single-Gate-Multi-Level-Beam-Switching.git
 ```
 
 2. Execute the MATLAB script 'Optimization_multi_level_beam_switch.m'. Optimization parameters can be adjusted within the script. Example parameters include:
