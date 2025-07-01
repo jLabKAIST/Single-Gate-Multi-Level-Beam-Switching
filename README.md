@@ -3,7 +3,7 @@
 ## Design code of single-gate multi-level beam switching [metasurface](https://en.wikipedia.org/wiki/Electromagnetic_metasurface) utilizing [Adjoint method](https://en.wikipedia.org/wiki/Adjoint_state_method)
 
 
-This document provides a design code for single-gate multi-level beam switching based on a metasurface, employing the adjoint method for optimization. This code is associated with the research paper [High-directivity multi-level beam switching with single-gate tunable metasurfaces based on graphene](https://arxiv.org/abs/2410.00806).
+This document provides a design code for single-gate multi-level beam switching based on a metasurface, employing the adjoint method for optimization. This code is associated with the research paper [High-Efficiency Multi-Level Beam Switching with Single-Gate Tunable Metasurfaces Based on Graphene](https://doi.org/10.1002/adom.202500236).
 
 
 ## Figure of merit
@@ -60,4 +60,4 @@ OptParm.b_coefficient = 0.3; % trade-off coefficient
 In 'Optimized_Structure' folder, we have included optimized solutions for two-, three-level metasurfaces at 7.0 7.5, 8.0 (main result), 8.5, and 9.0 ums. For the four-level, optimization result for 8.0 um is included.
 
 ## Citation
-If you utilize this code, please cite our paper: https://arxiv.org/abs/2410.00806. The citation will be updated upon journal acceptance.
+If you utilize this code, please cite our paper: https://doi.org/10.1002/adom.202500236.
